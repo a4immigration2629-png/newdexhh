@@ -1,11 +1,10 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#050805">
-<title>DIAMOND EXHH - !D</title>
+<meta name="theme-color" content="#061009">
+<title>DIAMOND EXHH | Official !D</title>
 
 <style>
 *{
@@ -17,24 +16,24 @@
 }
 
 html,body{
- width:100%;
  min-height:100%;
- background:#030704;
- color:white;
+ width:100%;
 }
 
 body{
- background:radial-gradient(ellipse at top,#142419 0%,#07110a 48%,#020503 100%);
+ background:#061009;
+ color:white;
  overflow-x:hidden;
 }
 
 .container{
  width:100%;
  max-width:650px;
- margin:auto;
  min-height:100vh;
+ margin:auto;
  padding:30px 25px 45px;
  position:relative;
+ background:radial-gradient(ellipse at 50% 15%,#17321d 0%,#09150c 45%,#030805 100%);
 }
 
 .header{
@@ -49,10 +48,10 @@ body{
  align-items:center;
  gap:10px;
  padding:12px 15px;
- border:1px solid #bd8d27;
+ background:linear-gradient(135deg,#351c00,#100b04);
+ border:1px solid #d6a52d;
  border-radius:12px;
- background:linear-gradient(135deg,#281900,#090909);
- box-shadow:0 0 22px #d99d1930;
+ box-shadow:0 0 22px #e6ad2930;
 }
 
 .logo-icon{
@@ -61,9 +60,9 @@ body{
 }
 
 .logo-text{
- font-size:22px;
+ font-size:21px;
  font-weight:900;
- letter-spacing:-1px;
+ white-space:nowrap;
 }
 
 .logo-text span{
@@ -71,14 +70,14 @@ body{
 }
 
 .age{
- color:#c3c3c3;
+ color:#b8c0ba;
  font-size:14px;
  font-weight:700;
 }
 
 h1{
- font-size:clamp(35px,8vw,52px);
- line-height:1.12;
+ font-size:clamp(36px,8vw,53px);
+ line-height:1.13;
  letter-spacing:-1.5px;
  font-weight:850;
  margin-bottom:22px;
@@ -86,28 +85,29 @@ h1{
 
 .gold{
  color:#ffca32;
- text-shadow:0 0 18px #ffbd3240;
+ text-shadow:0 0 20px #ffbd3260;
 }
 
 .subtitle{
- color:#c7cec8;
+ color:#c4cec5;
  font-size:17px;
  line-height:1.6;
- margin-bottom:52px;
+ margin-bottom:48px;
 }
 
 .cta{
  display:block;
+ width:100%;
  text-align:center;
  text-decoration:none;
- width:100%;
  padding:24px 12px;
- border-radius:25px;
- background:linear-gradient(110deg,#ffe36b,#ffb800,#ffdc50);
+ border-radius:24px;
+ background:linear-gradient(110deg,#ffe878,#ffb600,#ffdc50);
  color:#171000;
- border:2px solid #ffe58a;
- box-shadow:0 0 20px #ffbb2580,0 0 40px #ffb30035;
- transition:.2s;
+ border:2px solid #ffe68d;
+ box-shadow:0 0 22px #ffbb2580,0 0 45px #ffb30030;
+ transition:transform .2s;
+ cursor:pointer;
 }
 
 .cta:active{
@@ -122,7 +122,7 @@ h1{
 
 .cta small{
  display:block;
- margin-top:5px;
+ margin-top:6px;
  font-size:15px;
  font-weight:700;
 }
@@ -139,7 +139,6 @@ h1{
  font-size:16px;
  font-weight:700;
  white-space:nowrap;
- color:#e8e8e8;
 }
 
 .check{
@@ -151,14 +150,13 @@ h1{
 .steps{
  display:flex;
  flex-direction:column;
- gap:22px;
+ gap:25px;
 }
 
 .step{
  display:flex;
  align-items:center;
  gap:16px;
- padding:10px 0;
 }
 
 .number{
@@ -187,11 +185,11 @@ h1{
  text-align:center;
  margin-top:90px;
  padding-top:25px;
- border-top:1px solid #a879263d;
+ border-top:1px solid #a879264d;
 }
 
 .footer-icon{
- font-size:30px;
+ font-size:32px;
  color:#e8bb42;
  margin-bottom:12px;
 }
@@ -206,6 +204,39 @@ h1{
  color:#c79b3b;
  margin-top:15px;
  letter-spacing:2px;
+ font-weight:800;
+}
+
+/* FLOATING WHATSAPP BUTTON */
+
+.whatsapp{
+ position:fixed;
+ right:18px;
+ bottom:20px;
+ z-index:9999;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ gap:10px;
+ padding:13px 19px;
+ border-radius:50px;
+ background:#20c967;
+ color:white;
+ text-decoration:none;
+ font-size:15px;
+ font-weight:800;
+ box-shadow:0 5px 25px #0009;
+ border:1px solid #7cffae;
+}
+
+.whatsapp svg{
+ width:25px;
+ height:25px;
+ fill:white;
+}
+
+.whatsapp:active{
+ transform:scale(.95);
 }
 
 @media(max-width:380px){
@@ -274,39 +305,51 @@ h1{
 
   <div class="step">
    <div class="number">2</div>
-   <p>Enter your 10-digit mobile number</p>
+   <p>Enter your mobile number on the official registration page</p>
   </div>
 
   <div class="step">
    <div class="number">3</div>
-   <p>Verify using the official registration process</p>
+   <p>Complete verification through the official registration process</p>
   </div>
 
  </div>
 
-</main>
-
 <footer class="footer">
 
  <div class="footer-icon">◇</div>
- <p>Please play responsibly.</p>
+ <p>Please play responsibly. 18+ only.</p>
  <p class="brand">DIAMOND EXHH</p>
 
 </footer>
 
 </div>
 
+<!-- WHATSAPP CONTACT -->
+
+<a class="whatsapp"
+   href="https://wa.me/916377620541"
+   target="_blank"
+   rel="noopener noreferrer">
+
+ <svg viewBox="0 0 32 32">
+  <path d="M16 .5C7.45.5.5 7.45.5 16c0 2.73.72 5.4 2.08 7.75L.4 31.6l8.05-2.11A15.4 15.4 0 0 0 16 31c8.55 0 15.5-6.95 15.5-15S24.55.5 16 .5zm0 27.8a12.8 12.8 0 0 1-6.5-1.77l-.46-.27-4.78 1.25 1.28-4.66-.3-.48A12.8 12.8 0 1 1 16 28.3zm7.02-9.6c-.38-.19-2.25-1.11-2.6-1.24-.35-.13-.6-.19-.85.19-.25.38-.97 1.24-1.19 1.49-.22.25-.44.28-.82.09-.38-.19-1.6-.59-3.05-1.88-1.13-1.01-1.89-2.26-2.11-2.64-.22-.38-.02-.59.17-.78.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.13-.25.06-.47-.03-.66-.1-.19-.85-2.05-1.16-2.81-.3-.73-.61-.63-.85-.64h-.72c-.25 0-.66.09-1.01.47-.35.38-1.32 1.29-1.32 3.15 0 1.86 1.35 3.66 1.54 3.91.19.25 2.66 4.06 6.44 5.69.9.39 1.6.63 2.14.8.9.28 1.72.24 2.37.15.72-.11 2.25-.92 2.57-1.8.32-.88.32-1.64.22-1.8-.1-.16-.35-.25-.73-.44z"/>
+ </svg>
+
+ Chat on WhatsApp
+</a>
+
 <script>
 
-/* PUT YOUR OFFICIAL REGISTRATION URL HERE */
+/* ADD YOUR OFFICIAL REGISTRATION LINK */
 
-const SIGNUP_URL = "YOUR_REGISTRATION_URL";
+const SIGNUP_URL = "";
 
 document.getElementById("signupButton").addEventListener("click",function(e){
 
  e.preventDefault();
 
- if(SIGNUP_URL === "YOUR_REGISTRATION_URL"){
+ if(!SIGNUP_URL){
   alert("Registration link is not configured yet.");
   return;
  }
