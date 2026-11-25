@@ -1,0 +1,321 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<meta name="theme-color" content="#050805">
+<title>DIAMOND EXHH - !D</title>
+
+<style>
+*{
+ margin:0;
+ padding:0;
+ box-sizing:border-box;
+ font-family:'Segoe UI',Arial,sans-serif;
+ -webkit-tap-highlight-color:transparent;
+}
+
+html,body{
+ width:100%;
+ min-height:100%;
+ background:#030704;
+ color:white;
+}
+
+body{
+ background:radial-gradient(ellipse at top,#142419 0%,#07110a 48%,#020503 100%);
+ overflow-x:hidden;
+}
+
+.container{
+ width:100%;
+ max-width:650px;
+ margin:auto;
+ min-height:100vh;
+ padding:30px 25px 45px;
+ position:relative;
+}
+
+.header{
+ display:flex;
+ align-items:center;
+ justify-content:space-between;
+ margin-bottom:75px;
+}
+
+.logo{
+ display:flex;
+ align-items:center;
+ gap:10px;
+ padding:12px 15px;
+ border:1px solid #bd8d27;
+ border-radius:12px;
+ background:linear-gradient(135deg,#281900,#090909);
+ box-shadow:0 0 22px #d99d1930;
+}
+
+.logo-icon{
+ font-size:35px;
+ color:#ffda68;
+}
+
+.logo-text{
+ font-size:22px;
+ font-weight:900;
+ letter-spacing:-1px;
+}
+
+.logo-text span{
+ color:#ffca38;
+}
+
+.age{
+ color:#c3c3c3;
+ font-size:14px;
+ font-weight:700;
+}
+
+h1{
+ font-size:clamp(35px,8vw,52px);
+ line-height:1.12;
+ letter-spacing:-1.5px;
+ font-weight:850;
+ margin-bottom:22px;
+}
+
+.gold{
+ color:#ffca32;
+ text-shadow:0 0 18px #ffbd3240;
+}
+
+.subtitle{
+ color:#c7cec8;
+ font-size:17px;
+ line-height:1.6;
+ margin-bottom:52px;
+}
+
+.cta{
+ display:block;
+ text-align:center;
+ text-decoration:none;
+ width:100%;
+ padding:24px 12px;
+ border-radius:25px;
+ background:linear-gradient(110deg,#ffe36b,#ffb800,#ffdc50);
+ color:#171000;
+ border:2px solid #ffe58a;
+ box-shadow:0 0 20px #ffbb2580,0 0 40px #ffb30035;
+ transition:.2s;
+}
+
+.cta:active{
+ transform:scale(.97);
+}
+
+.cta strong{
+ display:block;
+ font-size:27px;
+ font-weight:900;
+}
+
+.cta small{
+ display:block;
+ margin-top:5px;
+ font-size:15px;
+ font-weight:700;
+}
+
+.benefits{
+ display:flex;
+ justify-content:space-around;
+ align-items:center;
+ gap:8px;
+ margin:32px 0 60px;
+}
+
+.benefit{
+ font-size:16px;
+ font-weight:700;
+ white-space:nowrap;
+ color:#e8e8e8;
+}
+
+.check{
+ color:#ffca37;
+ font-size:22px;
+ margin-right:5px;
+}
+
+.steps{
+ display:flex;
+ flex-direction:column;
+ gap:22px;
+}
+
+.step{
+ display:flex;
+ align-items:center;
+ gap:16px;
+ padding:10px 0;
+}
+
+.number{
+ width:40px;
+ height:40px;
+ flex-shrink:0;
+ border-radius:50%;
+ display:flex;
+ align-items:center;
+ justify-content:center;
+ background:linear-gradient(135deg,#ffdf58,#b77c0a);
+ color:#161000;
+ font-size:20px;
+ font-weight:900;
+ box-shadow:0 0 15px #ffbb3540;
+}
+
+.step p{
+ font-size:17px;
+ line-height:1.5;
+ font-weight:650;
+ color:#f1f1ed;
+}
+
+.footer{
+ text-align:center;
+ margin-top:90px;
+ padding-top:25px;
+ border-top:1px solid #a879263d;
+}
+
+.footer-icon{
+ font-size:30px;
+ color:#e8bb42;
+ margin-bottom:12px;
+}
+
+.footer p{
+ color:#858c86;
+ font-size:14px;
+ font-weight:600;
+}
+
+.footer .brand{
+ color:#c79b3b;
+ margin-top:15px;
+ letter-spacing:2px;
+}
+
+@media(max-width:380px){
+ .container{padding:25px 18px 40px}
+ .header{margin-bottom:60px}
+ h1{font-size:34px}
+ .benefit{font-size:13px}
+ .step p{font-size:15px}
+ .cta strong{font-size:23px}
+}
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<header class="header">
+
+ <div class="logo">
+  <div class="logo-icon">◆</div>
+  <div class="logo-text">DIAMOND<span> EXHH</span></div>
+ </div>
+
+ <div class="age">18+ ONLY</div>
+
+</header>
+
+<main>
+
+ <h1>
+  Get your DIAMOND EXHH <span class="gold">!D</span> in 2 minutes
+ </h1>
+
+ <p class="subtitle">
+  Sign up in a few quick steps. Works on any phone.
+ </p>
+
+ <a href="#" class="cta" id="signupButton">
+  <strong>Get my !D now</strong>
+  <small>Quick sign-up • Takes about 2 minutes</small>
+ </a>
+
+ <div class="benefits">
+
+  <div class="benefit">
+   <span class="check">✓</span> Free
+  </div>
+
+  <div class="benefit">
+   <span class="check">✓</span> 2 minutes
+  </div>
+
+  <div class="benefit">
+   <span class="check">✓</span> Any phone
+  </div>
+
+ </div>
+
+ <div class="steps">
+
+  <div class="step">
+   <div class="number">1</div>
+   <p>Tap "Get my !D now"</p>
+  </div>
+
+  <div class="step">
+   <div class="number">2</div>
+   <p>Enter your 10-digit mobile number</p>
+  </div>
+
+  <div class="step">
+   <div class="number">3</div>
+   <p>Verify using the official registration process</p>
+  </div>
+
+ </div>
+
+</main>
+
+<footer class="footer">
+
+ <div class="footer-icon">◇</div>
+ <p>Please play responsibly.</p>
+ <p class="brand">DIAMOND EXHH</p>
+
+</footer>
+
+</div>
+
+<script>
+
+/* PUT YOUR OFFICIAL REGISTRATION URL HERE */
+
+const SIGNUP_URL = "YOUR_REGISTRATION_URL";
+
+document.getElementById("signupButton").addEventListener("click",function(e){
+
+ e.preventDefault();
+
+ if(SIGNUP_URL === "YOUR_REGISTRATION_URL"){
+  alert("Registration link is not configured yet.");
+  return;
+ }
+
+ window.location.href = SIGNUP_URL;
+
+});
+
+</script>
+
+</body>
+</html>
