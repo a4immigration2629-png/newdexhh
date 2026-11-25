@@ -1,251 +1,243 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-<meta name="theme-color" content="#061009">
-<title>DIAMOND EXHH | Official !D</title>
+<meta name="theme-color" content="#07120e">
+<title>DIAMOND EXHH</title>
 
 <style>
-*{
- margin:0;
- padding:0;
- box-sizing:border-box;
- font-family:'Segoe UI',Arial,sans-serif;
- -webkit-tap-highlight-color:transparent;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  -webkit-tap-highlight-color: transparent;
 }
 
-html,body{
- min-height:100%;
- width:100%;
+html, body {
+  width: 100%;
+  min-height: 100%;
+  overflow-x: hidden;
 }
 
-body{
- background:#061009;
- color:white;
- overflow-x:hidden;
+body {
+  background:
+    radial-gradient(circle at top, #173c2c 0%, #0b1c14 45%, #050907 100%);
+  color: #fff;
+  padding: 20px 14px 100px;
 }
 
-.container{
- width:100%;
- max-width:650px;
- min-height:100vh;
- margin:auto;
- padding:30px 25px 45px;
- position:relative;
- background:radial-gradient(ellipse at 50% 15%,#17321d 0%,#09150c 45%,#030805 100%);
+.container {
+  width: 100%;
+  max-width: 650px;
+  margin: auto;
 }
 
-.header{
- display:flex;
- align-items:center;
- justify-content:space-between;
- margin-bottom:75px;
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 4px 28px;
 }
 
-.logo{
- display:flex;
- align-items:center;
- gap:10px;
- padding:12px 15px;
- background:linear-gradient(135deg,#351c00,#100b04);
- border:1px solid #d6a52d;
- border-radius:12px;
- box-shadow:0 0 22px #e6ad2930;
+.logo {
+  color: #e5c36a;
+  font-size: 22px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
 }
 
-.logo-icon{
- font-size:35px;
- color:#ffda68;
+.age {
+  border: 1px solid #d7b75d;
+  color: #e7ca7b;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 11px;
+  font-weight: 800;
 }
 
-.logo-text{
- font-size:21px;
- font-weight:900;
- white-space:nowrap;
+.hero {
+  text-align: center;
+  padding: 35px 18px;
+  border: 1px solid rgba(221, 188, 99, .35);
+  border-radius: 24px;
+  background: linear-gradient(145deg, rgba(27, 65, 46, .95), rgba(8, 20, 14, .96));
+  box-shadow: 0 15px 45px rgba(0,0,0,.3);
 }
 
-.logo-text span{
- color:#ffca38;
+.tag {
+  display: inline-block;
+  color: #e8c96f;
+  border: 1px solid rgba(232,201,111,.5);
+  padding: 7px 14px;
+  border-radius: 30px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  margin-bottom: 20px;
 }
 
-.age{
- color:#b8c0ba;
- font-size:14px;
- font-weight:700;
+h1 {
+  font-size: clamp(29px, 7vw, 43px);
+  line-height: 1.18;
+  font-weight: 900;
+  margin-bottom: 16px;
 }
 
-h1{
- font-size:clamp(36px,8vw,53px);
- line-height:1.13;
- letter-spacing:-1.5px;
- font-weight:850;
- margin-bottom:22px;
+h1 span {
+  color: #e5c36a;
 }
 
-.gold{
- color:#ffca32;
- text-shadow:0 0 20px #ffbd3260;
+.subtitle {
+  color: #c1cec5;
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 25px;
 }
 
-.subtitle{
- color:#c4cec5;
- font-size:17px;
- line-height:1.6;
- margin-bottom:48px;
+/* Main WhatsApp logo button */
+.main-whatsapp {
+  width: 76px;
+  height: 76px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #20c96b;
+  border-radius: 50%;
+  box-shadow: 0 8px 25px rgba(32,201,107,.3);
+  transition: .2s;
 }
 
-.cta{
- display:block;
- width:100%;
- text-align:center;
- text-decoration:none;
- padding:24px 12px;
- border-radius:24px;
- background:linear-gradient(110deg,#ffe878,#ffb600,#ffdc50);
- color:#171000;
- border:2px solid #ffe68d;
- box-shadow:0 0 22px #ffbb2580,0 0 45px #ffb30030;
- transition:transform .2s;
- cursor:pointer;
+.main-whatsapp:active {
+  transform: scale(.94);
 }
 
-.cta:active{
- transform:scale(.97);
+.main-whatsapp svg {
+  width: 42px;
+  height: 42px;
+  fill: white;
 }
 
-.cta strong{
- display:block;
- font-size:27px;
- font-weight:900;
+.small-note {
+  margin-top: 14px;
+  color: #a8b8ad;
+  font-size: 11px;
 }
 
-.cta small{
- display:block;
- margin-top:6px;
- font-size:15px;
- font-weight:700;
+.features {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 22px 0;
 }
 
-.benefits{
- display:flex;
- justify-content:space-around;
- align-items:center;
- gap:8px;
- margin:32px 0 60px;
+.feature {
+  text-align: center;
+  padding: 18px 8px;
+  background: rgba(255,255,255,.045);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: 15px;
 }
 
-.benefit{
- font-size:16px;
- font-weight:700;
- white-space:nowrap;
+.feature strong {
+  display: block;
+  color: #e5c36a;
+  font-size: 17px;
+  margin-bottom: 6px;
 }
 
-.check{
- color:#ffca37;
- font-size:22px;
- margin-right:5px;
+.feature small {
+  color: #bdc9c0;
+  font-size: 11px;
 }
 
-.steps{
- display:flex;
- flex-direction:column;
- gap:25px;
+.section {
+  margin-top: 25px;
+  padding: 23px 20px;
+  border-radius: 19px;
+  background: rgba(255,255,255,.045);
+  border: 1px solid rgba(255,255,255,.08);
 }
 
-.step{
- display:flex;
- align-items:center;
- gap:16px;
+.section h2 {
+  color: #e5c36a;
+  font-size: 19px;
+  margin-bottom: 18px;
 }
 
-.number{
- width:40px;
- height:40px;
- flex-shrink:0;
- border-radius:50%;
- display:flex;
- align-items:center;
- justify-content:center;
- background:linear-gradient(135deg,#ffdf58,#b77c0a);
- color:#161000;
- font-size:20px;
- font-weight:900;
- box-shadow:0 0 15px #ffbb3540;
+.step {
+  display: flex;
+  gap: 13px;
+  margin: 16px 0;
+  align-items: flex-start;
 }
 
-.step p{
- font-size:17px;
- line-height:1.5;
- font-weight:650;
- color:#f1f1ed;
+.number {
+  min-width: 29px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: #d9b85e;
+  color: #111;
+  font-size: 13px;
+  font-weight: 900;
 }
 
-.footer{
- text-align:center;
- margin-top:90px;
- padding-top:25px;
- border-top:1px solid #a879264d;
+.step p {
+  color: #c5d0c8;
+  font-size: 13px;
+  line-height: 1.6;
+  padding-top: 4px;
 }
 
-.footer-icon{
- font-size:32px;
- color:#e8bb42;
- margin-bottom:12px;
+footer {
+  text-align: center;
+  color: #819087;
+  font-size: 11px;
+  line-height: 1.8;
+  padding: 30px 10px 10px;
 }
 
-.footer p{
- color:#858c86;
- font-size:14px;
- font-weight:600;
+/* Floating WhatsApp logo */
+.floating-whatsapp {
+  position: fixed;
+  right: 18px;
+  bottom: 22px;
+  width: 62px;
+  height: 62px;
+  border-radius: 50%;
+  background: #20c96b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 5px 25px rgba(32,201,107,.4);
+  z-index: 999;
+  text-decoration: none;
 }
 
-.footer .brand{
- color:#c79b3b;
- margin-top:15px;
- letter-spacing:2px;
- font-weight:800;
+.floating-whatsapp svg {
+  width: 35px;
+  height: 35px;
+  fill: white;
 }
 
-/* FLOATING WHATSAPP BUTTON */
+@media (max-width: 380px) {
+  .hero {
+    padding: 28px 14px;
+  }
 
-.whatsapp{
- position:fixed;
- right:18px;
- bottom:20px;
- z-index:9999;
- display:flex;
- align-items:center;
- justify-content:center;
- gap:10px;
- padding:13px 19px;
- border-radius:50px;
- background:#20c967;
- color:white;
- text-decoration:none;
- font-size:15px;
- font-weight:800;
- box-shadow:0 5px 25px #0009;
- border:1px solid #7cffae;
-}
+  .features {
+    gap: 7px;
+  }
 
-.whatsapp svg{
- width:25px;
- height:25px;
- fill:white;
-}
-
-.whatsapp:active{
- transform:scale(.95);
-}
-
-@media(max-width:380px){
- .container{padding:25px 18px 40px}
- .header{margin-bottom:60px}
- h1{font-size:34px}
- .benefit{font-size:13px}
- .step p{font-size:15px}
- .cta strong{font-size:23px}
+  .feature {
+    padding: 15px 5px;
+  }
 }
 </style>
 </head>
@@ -254,111 +246,95 @@ h1{
 
 <div class="container">
 
-<header class="header">
+  <header>
+    <div class="logo">◆ DIAMOND EXHH</div>
+    <div class="age">18+ ONLY</div>
+  </header>
 
- <div class="logo">
-  <div class="logo-icon">◆</div>
-  <div class="logo-text">DIAMOND<span> EXHH</span></div>
- </div>
+  <main>
 
- <div class="age">18+ ONLY</div>
+    <section class="hero">
+      <div class="tag">WELCOME TO DIAMOND EXHH</div>
 
-</header>
+      <h1>
+        Get your DIAMOND EXHH
+        <span>!D</span>
+        in 2 minutes
+      </h1>
 
-<main>
+      <p class="subtitle">
+        Connect with us on WhatsApp for assistance.
+      </p>
 
- <h1>
-  Get your DIAMOND EXHH <span class="gold">!D</span> in 2 minutes
- </h1>
+      <a class="main-whatsapp"
+         href="https://wa.me/916377620541"
+         target="_blank"
+         rel="noopener noreferrer"
+         aria-label="Chat on WhatsApp">
 
- <p class="subtitle">
-  Sign up in a few quick steps. Works on any phone.
- </p>
+        <svg viewBox="0 0 32 32" aria-hidden="true">
+          <path d="M16 .5C7.45.5.5 7.36.5 15.83c0 2.7.72 5.34 2.1 7.68L.4 31.5l8.2-2.14a15.7 15.7 0 0 0 7.4 1.86h.01c8.55 0 15.5-6.87 15.5-15.33C31.5 7.42 24.55.5 16 .5zm0 27.98c-2.3 0-4.56-.62-6.53-1.8l-.47-.28-4.87 1.27 1.3-4.72-.31-.49a12.1 12.1 0 0 1-1.91-6.63C3.21 9.14 8.95 3.47 16 3.47s12.79 5.67 12.79 12.64c0 6.97-5.74 12.37-12.79 12.37zm7.02-9.49c-.38-.19-2.25-1.1-2.6-1.22-.35-.13-.6-.19-.85.19-.25.38-.98 1.22-1.2 1.47-.22.25-.44.28-.82.09-.38-.19-1.6-.59-3.05-1.88-1.13-1-1.89-2.24-2.11-2.62-.22-.38-.02-.59.17-.78.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.12-.25.06-.47-.03-.66-.1-.19-.85-2.02-1.17-2.77-.31-.72-.62-.62-.85-.63h-.73c-.25 0-.66.09-1 .47-.35.38-1.32 1.28-1.32 3.12 0 1.84 1.35 3.62 1.54 3.87.19.25 2.66 4.03 6.44 5.65.9.39 1.6.62 2.15.79.9.28 1.72.24 2.37.15.72-.11 2.25-.91 2.57-1.78.31-.88.31-1.63.22-1.78-.09-.16-.34-.25-.72-.44z"/>
+        </svg>
+      </a>
 
- <a href="#" class="cta" id="signupButton">
-  <strong>Get my !D now</strong>
-  <small>Quick sign-up • Takes about 2 minutes</small>
- </a>
+      <div class="small-note">Tap the WhatsApp logo to contact us</div>
+    </section>
 
- <div class="benefits">
+    <section class="features">
+      <div class="feature">
+        <strong>24/7</strong>
+        <small>Support</small>
+      </div>
 
-  <div class="benefit">
-   <span class="check">✓</span> Free
-  </div>
+      <div class="feature">
+        <strong>Easy</strong>
+        <small>Contact</small>
+      </div>
 
-  <div class="benefit">
-   <span class="check">✓</span> 2 minutes
-  </div>
+      <div class="feature">
+        <strong>Fast</strong>
+        <small>Assistance</small>
+      </div>
+    </section>
 
-  <div class="benefit">
-   <span class="check">✓</span> Any phone
-  </div>
+    <section class="section">
+      <h2>How to Get Started</h2>
 
- </div>
+      <div class="step">
+        <div class="number">1</div>
+        <p>Tap the WhatsApp logo to contact our team.</p>
+      </div>
 
- <div class="steps">
+      <div class="step">
+        <div class="number">2</div>
+        <p>Send your query and tell us what assistance you need.</p>
+      </div>
 
-  <div class="step">
-   <div class="number">1</div>
-   <p>Tap "Get my !D now"</p>
-  </div>
+      <div class="step">
+        <div class="number">3</div>
+        <p>Our team will guide you through the next steps.</p>
+      </div>
+    </section>
 
-  <div class="step">
-   <div class="number">2</div>
-   <p>Enter your mobile number on the official registration page</p>
-  </div>
+  </main>
 
-  <div class="step">
-   <div class="number">3</div>
-   <p>Complete verification through the official registration process</p>
-  </div>
-
- </div>
-
-<footer class="footer">
-
- <div class="footer-icon">◇</div>
- <p>Please play responsibly. 18+ only.</p>
- <p class="brand">DIAMOND EXHH</p>
-
-</footer>
+  <footer>
+    Please play responsibly. 18+ only.<br>
+    DIAMOND EXHH
+  </footer>
 
 </div>
 
-<!-- WHATSAPP CONTACT -->
-
-<a class="whatsapp"
+<a class="floating-whatsapp"
    href="https://wa.me/916377620541"
    target="_blank"
-   rel="noopener noreferrer">
+   rel="noopener noreferrer"
+   aria-label="Chat on WhatsApp">
 
- <svg viewBox="0 0 32 32">
-  <path d="M16 .5C7.45.5.5 7.45.5 16c0 2.73.72 5.4 2.08 7.75L.4 31.6l8.05-2.11A15.4 15.4 0 0 0 16 31c8.55 0 15.5-6.95 15.5-15S24.55.5 16 .5zm0 27.8a12.8 12.8 0 0 1-6.5-1.77l-.46-.27-4.78 1.25 1.28-4.66-.3-.48A12.8 12.8 0 1 1 16 28.3zm7.02-9.6c-.38-.19-2.25-1.11-2.6-1.24-.35-.13-.6-.19-.85.19-.25.38-.97 1.24-1.19 1.49-.22.25-.44.28-.82.09-.38-.19-1.6-.59-3.05-1.88-1.13-1.01-1.89-2.26-2.11-2.64-.22-.38-.02-.59.17-.78.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.13-.25.06-.47-.03-.66-.1-.19-.85-2.05-1.16-2.81-.3-.73-.61-.63-.85-.64h-.72c-.25 0-.66.09-1.01.47-.35.38-1.32 1.29-1.32 3.15 0 1.86 1.35 3.66 1.54 3.91.19.25 2.66 4.06 6.44 5.69.9.39 1.6.63 2.14.8.9.28 1.72.24 2.37.15.72-.11 2.25-.92 2.57-1.8.32-.88.32-1.64.22-1.8-.1-.16-.35-.25-.73-.44z"/>
- </svg>
-
- Chat on WhatsApp
+  <svg viewBox="0 0 32 32" aria-hidden="true">
+    <path d="M16 .5C7.45.5.5 7.36.5 15.83c0 2.7.72 5.34 2.1 7.68L.4 31.5l8.2-2.14a15.7 15.7 0 0 0 7.4 1.86h.01c8.55 0 15.5-6.87 15.5-15.33C31.5 7.42 24.55.5 16 .5zm0 27.98c-2.3 0-4.56-.62-6.53-1.8l-.47-.28-4.87 1.27 1.3-4.72-.31-.49a12.1 12.1 0 0 1-1.91-6.63C3.21 9.14 8.95 3.47 16 3.47s12.79 5.67 12.79 12.64c0 6.97-5.74 12.37-12.79 12.37zm7.02-9.49c-.38-.19-2.25-1.1-2.6-1.22-.35-.13-.6-.19-.85.19-.25.38-.98 1.22-1.2 1.47-.22.25-.44.28-.82.09-.38-.19-1.6-.59-3.05-1.88-1.13-1-1.89-2.24-2.11-2.62-.22-.38-.02-.59.17-.78.17-.17.38-.44.57-.66.19-.22.25-.38.38-.63.12-.25.06-.47-.03-.66-.1-.19-.85-2.02-1.17-2.77-.31-.72-.62-.62-.85-.63h-.73c-.25 0-.66.09-1 .47-.35.38-1.32 1.28-1.32 3.12 0 1.84 1.35 3.62 1.54 3.87.19.25 2.66 4.03 6.44 5.65.9.39 1.6.62 2.15.79.9.28 1.72.24 2.37.15.72-.11 2.25-.91 2.57-1.78.31-.88.31-1.63.22-1.78-.09-.16-.34-.25-.72-.44z"/>
+  </svg>
 </a>
-
-<script>
-
-/* ADD YOUR OFFICIAL REGISTRATION LINK */
-
-const SIGNUP_URL = "";
-
-document.getElementById("signupButton").addEventListener("click",function(e){
-
- e.preventDefault();
-
- if(!SIGNUP_URL){
-  alert("Registration link is not configured yet.");
-  return;
- }
-
- window.location.href = SIGNUP_URL;
-
-});
-
-</script>
 
 </body>
 </html>
